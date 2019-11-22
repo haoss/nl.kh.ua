@@ -1,0 +1,465 @@
+/*==========  Desktop First Method  ==========*/
+
+/* 1920 */
+@media only screen and (min-width : 1999px)
+  /**/
+
+@media only screen and (max-width : 1599px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1439px)
+  /**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .widget
+    &__block
+      &-wrapper
+        &>div
+          padding: 0 14px
+      &--aurum
+        .widget__block-wrapper
+          &>div
+            padding: 0 5px
+  .advantage
+    height: 480px
+  .main-banner
+    background-size: auto 620px
+    .container
+      height: 620px
+    &__info
+      font-size: rem(33)
+      height: 107px
+      line-height: 104px
+      img
+        width: 42px
+        height: 44px
+        vertical-align: -10px
+    &__content
+      padding-top: 100px
+  .main-buttons
+    &__btn
+      font-size: rem(25)
+      img
+        height: 101px
+      span
+        height: 101px
+        line-height: 100px
+  .header
+    &__logo
+      margin: 17px 0 17px 358px
+    &__btn
+      margin: 31px 0
+    &__button
+      display: block
+      &.is-active
+        background: linear-gradient(to right, $color-red 45px, #fff 0px)
+        span
+          left: 18px
+          background: transparent
+          &::before
+            transform: rotate(43deg)
+          &::after
+            transform: rotate(-45deg)
+            top: 5px
+    &__nav
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      padding: 0
+      left: 0
+      right: 0
+      top: 161px
+      background: $color-white
+      border-top: 1px solid #545455
+      &.is-active
+        opacity: 1
+        visibility: visible
+      &-ul
+        display: block
+        padding: 30px 15px
+        max-width: 970px
+        margin: 0 auto
+      &-li
+        display: block
+        float: none
+        margin: 0
+        text-align: left
+        .btn
+          margin-bottom: 10px
+      &-a
+        display: block
+      &-ulul
+        display: none
+  .content
+    &__top
+      &-wrapper
+        height: 500px
+        p
+          font-size: rem(19)
+      &--credit, &--text
+        .content__top-wrapper
+          height: auto
+          p
+            font-size: rem(16)
+        padding-top: 30px
+        padding-bottom: 40px
+  .catalog
+    &__block
+      &-content
+        padding: 10px
+  .product
+    &__buy
+      &-price
+        display: block
+    &__th
+      table
+        width: 300px
+    &__gallery
+      .gallery-item:not(.first)
+        width: 97px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .header
+    &__top
+      display: none
+  .footer
+    &__bottom
+      display: flex
+      flex-direction: column
+      &>div
+        width: 100%
+        height: 35px
+        line-height: 35px
+        text-align: center
+        &:first-child
+          order: 1
+          &+div
+            order: 3
+            &+div
+              order: 2
+    &__top
+      .row
+        &>div
+          &+div
+            margin-top: 20px
+  .widget
+    &__row
+      &>div
+        width: 50%
+    &__block
+      &-wrapper
+        &>div
+          padding: 0 10px !important
+  .advantage
+    height: 420px
+    padding-top: 115px
+  .calculate
+    min-height: 420px
+    padding-top: 115px
+    &__p
+      max-width: 485px
+  .main-banner
+    background-size: auto 620px
+    .container
+      height: 620px
+    &__info
+      font-size: rem(33)
+      height: 107px
+      line-height: 104px
+      img
+        width: 42px
+        height: 44px
+        vertical-align: -10px
+    &__content
+      padding-top: 100px
+  .main-buttons
+    &__btn
+      img
+        height: 76px
+      span
+        height: 76px
+        line-height: 76px
+  .header
+    &__logo
+      margin-left: 313px
+    &__btn
+      display: none
+    &__nav
+      top: 110px
+      &-ul
+        max-width: 750px
+  .catalog
+    &__row
+      &>div
+        width: 50%
+    &__block
+      &-content
+        padding: 20px 20px 10px 20px
+  .product
+    &__buy
+      &-price
+        display: flex
+    &__gallery
+      max-width: 557px
+      margin: 0 auto 25px
+      .gallery-item:not(.first)
+        width: 122px
+  .about-us
+    &__img
+      margin-left: -240px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+
+  .animated
+    transition-property: none !important
+    transform: none !important
+    animation: none !important
+  .h1, h1
+    font-size: rem(26)
+  .widget
+    &__block
+      max-width: 345px
+      margin: 0 auto
+    &__row
+      align-items: center
+      flex-direction: column
+      &>div
+        width: 100%
+        &+div
+          margin-top: 20px
+  .advantage
+    font-size: rem(20)
+    height: 370px
+    padding-top: 95px
+  .calculate
+    min-height: 370px
+    padding-top: 35px
+  .main-banner
+    background-size: auto 420px
+    .container
+      height: 420px
+    &__info
+      font-size: rem(22)
+      height: 70px
+      line-height: 70px
+      img
+        width: 28px
+        height: 29px
+        vertical-align: -6px
+        margin-right: 6px
+    &__content
+      padding-left: 160px
+      font-size: rem(20)
+      padding-top: 30px
+      ul
+        font-size: rem(22)
+    &__title
+      font-size: rem(26)
+  .main-buttons
+    &__btn
+      font-size: rem(25)
+      max-width: 450px
+      margin: 0 auto
+      img
+        height: 96px
+      span
+        height: 96px
+        line-height: 96px
+    .row
+      &>div
+        &+div
+          margin-top: 20px
+    ul
+      &>li
+        float: none
+        width: 100%
+        &+li
+          margin-top: 20px
+  .header
+    &__logo
+      margin-left: 0
+      float: right
+  .content
+    &__top
+      background-image: url('../img/content-top-default.jpg') !important
+      &-wrapper
+        height: auto
+        padding: 50px 0
+      &--credit, &--text
+        padding: 0
+        .content__top-widget
+          margin-left: 50px
+  .catalog
+    &__row
+      &>div
+        width: 100%
+    &__block
+      max-width: 360px
+      margin-left: auto
+      margin-right: auto
+  .product
+    &__buy
+      display: block
+      text-align: center
+      &>div
+        display: block
+        &+div
+          padding-left: 0
+          padding-top: 20px
+          width: 100% !important
+      &-price
+        display: block
+    &__info
+      display: block
+      &>div
+        width: 100%
+    &__gallery
+      .gallery-item:not(.first)
+        width: 72px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+  .footer
+    &__ul
+      column-count: 1
+    &__contact
+      display: block
+      &>div
+        width: 100%
+    &__bottom
+      &-left
+        font-size: rem(13)
+  .widget
+    &__block
+      &-wrapper
+        &>div
+          padding: 0 10px !important
+      &--aurum
+        .widget
+          &__block
+            &-wrapper
+              &>div
+                padding: 0 5px !important
+  .advantage
+    height: 320px
+    padding-top: 45px
+    &__p
+      font-size: rem(16)
+      line-height: 24px
+  .calculate
+    min-height: 320px
+    padding-top: 45px
+    &__p
+      font-size: rem(16)
+      line-height: 24px
+  .main-banner
+    background-size: auto 325px
+    .container
+      height: 325px
+    &__content
+      padding-left: 40px
+      p
+        font-size: rem(16)
+        line-height: 18px
+      ul
+        font-size: rem(18)
+        .fa
+          top: 2px
+    &__title
+      font-size: rem(23)
+    &__info
+      font-size: rem(17)
+      height: 58px
+      line-height: 58px
+      img
+        width: 22px
+        height: 23px
+  .main-buttons
+    &__btn
+      font-size: rem(21)
+      img
+        height: 76px
+      span
+        height: 76px
+        line-height: 76px
+  .header
+    &__button
+      width: 45px
+      padding: 0
+      font-size: 0
+    &__logo
+      margin-top: 20px
+      span
+        left: 78px
+      img
+        width: 213px
+        height: 67px
+  .services
+    &__block
+      padding-left: 80px
+  .section
+    &__head
+      p
+        padding-bottom: 20px
+  .content
+    &__top
+      &-wrapper
+        &>div
+          width: auto
+      &-widget
+        padding-top: 30px
+      &--credit
+        .content__top-widget
+          margin-left: 0
+          &>img
+            display: none
+  .catalog
+    &__block
+      margin-bottom: 20px
+      &-content
+        padding: 10px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 319px)
+  /**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .container
+    width: 750px
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  .container
+    width: 970px
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  .container
+    width: 1170px
+
+/* 1440 */
+@media only screen and (min-width : 1440px)
+  /**/
+
+@media only screen and (max-width : 1600px)
+  /**/
+
+/* 1920 */
+@media only screen and (min-width : 1920px)
+  /**/

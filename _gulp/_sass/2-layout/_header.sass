@@ -1,0 +1,154 @@
+/* header */
+.header
+  position: relative
+  z-index: 100
+  background: $color-white
+  box-shadow: 0 5px 16px rgba(#545455,.12)
+  &__top
+    height: 54px
+    border-bottom: 1px solid #dfe1e3
+    font-size: rem(14)
+    padding: 17px 0
+    &-wrapper
+      display: flex
+      justify-content: space-between
+    &-contact
+      position: relative
+      padding-left: 17px
+      .fa
+        position: absolute
+        left: 0
+        top: 2px
+        color: #272726
+        font-size: rem(14)
+      &>span
+        position: relative
+        padding-left: 25px
+        display: inline-block
+        &:first-child
+          margin-left: -17px
+        &+span
+          margin-left: 20px
+        img
+          position: absolute
+          left: 0
+          top: 1px
+      a
+        color: #545455
+        text-decoration: none
+        &:hover, &:focus
+          color: $color-red
+  &__bottom
+    height: 110px
+  &__logo
+    margin: 18px 0
+    position: relative
+    font-size: rem(15)
+    font-family: $font-agora-slab-m
+    float: left
+    span
+      position: absolute
+      white-space: nowrap
+      left: 82px
+      bottom: 0
+      line-height: 1
+  &__btn
+    float: right
+    margin: 33px 0
+    padding: 0
+  &__nav
+    padding-left: 280px
+    padding-right: 200px
+    text-align: center
+    &-ul
+      margin: 0
+      padding: 30px 0
+      display: inline-block
+    &-li
+      list-style: none
+      margin: 0 20px
+      float: left
+      position: relative
+      &:hover
+        .header__nav-ulul
+          opacity: 1
+          visibility: visible
+    &-a
+      color: #272726
+      font-size: rem(19)
+      font-family: $font-agora-slab-m
+      text-decoration: none
+      height: 45px
+      line-height: 45px
+      &:hover, &:focus
+        color: #545455
+      .fa-angle-down
+        margin-left: 5px
+        transform: rotate(0)
+        transform-origin: 50%
+        transition: transform 0.35s
+      .fa-diamond
+        margin-right: 5px
+      &:hover
+        .fa-angle-down
+          transform: rotate(-180deg)
+    &-ulul
+      padding: 15px 10px 15px 15px
+      margin: 0
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      transition: all 0.35s
+      width: 210px
+      background: $color-white
+      left: 0
+      top: 45px
+      border: 1px solid #dfe1e3
+      text-align: left
+      font-size: rem(16)
+      z-index: 10
+      font-family: $font-agora-slab-m
+    &-lili
+      margin: 0 0 10px 0
+      list-style: none
+      &.active
+        .header__nav-a
+          color: $color-red
+      &:last-child
+        margin-bottom: 0
+    &-aa
+      text-decoration: none
+      color: #272726
+      line-height: 20px
+      display: inline-block
+  &__button
+    display: none
+    position: absolute
+    width: 115px
+    height: 45px
+    border: 1px solid #545455
+    background: linear-gradient(to right, #545455 45px, #fff 0px)
+    padding: 0 0 0 45px
+    text-align: center
+    margin-top: 31px
+    font-size: rem(16)
+    font-family: $font-agora-slab-b
+    span
+      position: absolute
+      left: 16px
+      top: 21px
+      width: 14px
+      height: 2px
+      background: #fff
+      &::before, &::after
+        content: ''
+        width: 14px
+        height: 2px
+        background: $color-white
+        position: absolute
+        top: -4px
+        left: 0
+        transform-origin: 0 0
+      &::after
+        top: 4px
+        transform-origin: 0 100%

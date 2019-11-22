@@ -1,0 +1,119 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Каталог' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Каталог - бриллианты в продаже' + ' - Ломбард «Національний»' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    .content
+      
+      .breadcrumbs
+        .container
+          ul
+            li
+              a(href="#!") 
+                i.fa.fa-home
+                | Главная
+      
+      .container
+        .section__head.section__head--center
+          div
+            h1 Продажа
+          p.mwidth-750.no--p-bottom Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    
+        .main-buttons.main-buttons--document
+          ul
+            li.active
+              a(href="#!").main-buttons__btn
+                img(src="./img/main-buttons-1.jpg", alt="").main-buttons__img
+                span Бриллианты в продаже
+            li
+              a(href="#!").main-buttons__btn
+                img(src="./img/main-buttons-2.jpg", alt="").main-buttons__img
+                span Изделия в продаже
+        
+        .section.no--p
+          .table-responsive
+            table#tableDiamonds.table.table-hover.table__diamonds
+              thead
+                tr
+                  th(align="left") Название
+                  th Форма
+                  th Масса, Ct
+                  th GIA, Цвет
+                  th GIA, Чистота
+                  th Сертификат
+                  th Цена, грн
+                  th Примечание
+              tbody
+                - for (var i=0; i<6; i++) {
+                tr
+                  td(align="left") N156554
+                  td
+                    img(src="./img/diamant_icons/round.png", alt="")
+                  td 5.04
+                  td M
+                  td VS1
+                  td
+                    a(href="#!") MGL
+                  td
+                    .table__price
+                      div 
+                        s 964 256
+                      div 864 256 
+                  td(align="left") в паре с F33 / в серьгах
+                tr
+                  td(align="left") N156554
+                  td
+                    img(src="./img/diamant_icons/oval.png", alt="")
+                  td 5.04
+                  td M
+                  td VS1
+                  td
+                    a(href="#!") MGL
+                  td
+                    .table__price
+                      div 
+                        s 964 256
+                      div 864 256 
+                  td(align="left")
+                tr
+                  td(align="left") N156554
+                  td
+                    img(src="./img/diamant_icons/radiant.png", alt="")
+                  td 5.04
+                  td M
+                  td VS1
+                  td
+                    a(href="#!") MGL
+                  td
+                    .table__price
+                      div 
+                        s 964 256
+                      div 864 256 
+                  td(align="left") в паре с F33 / в серьгах
+                - }
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")

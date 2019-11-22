@@ -1,0 +1,25 @@
+.body__shadow
+
+.loader
+  .loader__block
+
+#popup.popup.mfp-hide
+  .popup__wrapper
+    .section__head.section__head--center
+      div
+        .h1 Купить в один клик
+      p Для оформления заказа оставьте свои контакты. Наш специалист перевонит Вам в ближайшее время и  уточнит детали заказа.
+    .popup__form
+      form.form(action="#")
+        .form-group.has-icon
+          label.hidden Ваше имя
+          input(type="text" name="first-name" placeholder="Ваше имя").form-control
+          i.fa.fa-user
+        .form-group.has-icon
+          label.hidden Ваш email
+          input(type="text" name="email" placeholder="Email").form-control
+          i.fa.fa-envelope
+        
+        .clear30
+        .text-center
+          button(type="submit").btn Отправить

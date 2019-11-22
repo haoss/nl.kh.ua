@@ -1,0 +1,187 @@
+/* forms */
+
+input, textarea
+  &::-webkit-input-placeholder
+    color: #545455
+  &::-moz-placeholder
+    color: #545455
+  &:-ms-input-placeholder
+    color: #545455
+  &:-moz-placeholder
+    color: #545455
+
+button, input, optgroup, select, textarea
+  margin: 0
+  font: inherit
+  color: inherit
+  outline: none
+  &:hover, &:focus, &:active
+    outline: none
+
+button, html input[type=button], input[type=reset], input[type=submit]
+  -webkit-appearance: button
+  cursor: pointer
+  outline: none
+
+.form
+  &-group,  &__group
+    margin-bottom: 10px
+    &.has-icon
+      position: relative
+      &::after
+        height: 20px
+        width: 1px
+        background: #dfe1e3
+        position: absolute
+        left: 31px
+        top: 10px
+        content: ''
+      .form
+        &-control, &__control
+          padding-left: 43px
+          &+.fa
+            display: block
+    &--file
+      background: $color-white
+      .inputfile
+        width: 0.1px
+        height: 0.1px
+        opacity: 0
+        overflow: hidden
+        position: absolute
+        z-index: -1
+      .inputfile + label
+        font-size: rem(15)
+        font-weight: 400
+        text-overflow: ellipsis
+        white-space: nowrap
+        cursor: pointer
+        display: block
+        overflow: hidden
+        padding: 0
+        font-family: $font-agora-slab-m
+        position: relative
+        &::after
+          height: 20px
+          width: 1px
+          background: #dfe1e3
+          position: absolute
+          left: 31px
+          top: 9px
+          content: ''
+        &::before
+          position: absolute
+          left: 10px
+          top: 13px
+          font-size: rem(15)
+          color: #545455
+          line-height: 1
+          font-family: $font-awesome
+          content: "\f1c5"
+        .fa
+          position: absolute
+          font-size: rem(15)
+          color: #545455
+          right: 10px
+          top: 13px
+        &:focus
+          outline: none
+      .inputfile-6
+        + label
+          color: #545455
+          padding: 0
+          display: block
+          margin: 0
+          border: 1px solid #dfe1e3
+          text-decoration: underline
+          text-align: left
+        &:focus + label, &.has-focus + label
+          border-color: #ababab
+        + label
+          &:hover
+            border-color: #ababab
+          span, strong
+            padding: 0 12px 0 45px
+            /* 10px 20px */
+          span
+            width: 100%
+            height: 40px
+            line-height: 40px
+            display: block
+            text-overflow: ellipsis
+            white-space: nowrap
+            overflow: hidden
+            vertical-align: top
+            .caret-square-o-down
+              position: absolute
+              right: 10px
+              color: #545455
+              font-size: rem(15)
+              top: 50%
+              transform: translateY(-50%)
+  &-control, &__control
+    display: block
+    width: 100%
+    height: 40px
+    padding: 6px 12px
+    font-size: rem(15)
+    line-height: 1.42857143
+    color: #545455
+    background-color: $color-white
+    background-image: none
+    border: 1px solid #dfe1e3
+    border-radius: 0
+    box-shadow: none
+    transition: all .35s
+    font-family: $font-agora-slab-m
+    &+.fa
+      display: none
+      position: absolute
+      left: 9px
+      top: 13px
+      font-size: rem(15)
+      color: #545455
+      line-height: 1
+      width: 16px
+      text-align: center
+
+textarea
+  &.form-control, &.form__control
+    height: 192px
+    resize: none
+    padding-top: 8px
+    &--thin
+      height: 140px
+
+label
+  display: inline-block
+  max-width: 100%
+  margin-bottom: 5px
+  font-weight: 700
+
+.has
+  &-success
+    .form-control
+      border-color: #3c763d
+      box-shadow: none
+
+  &-warning
+    .form-control
+      border-color: #8a6d3b
+    box-shadow: none
+
+  &-error
+    .fa
+      color: #d05f5d
+    .form-control
+      border-color: #d05f5d
+      box-shadow: none
+
+  &-success .control-label
+    color: #3c763d
+
+  &-warning .control-label
+    color: #8a6d3b
+
+  &-error .control-label
+    color: #a94442

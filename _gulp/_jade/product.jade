@@ -1,0 +1,125 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Каталог' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Изделие в продаже' + ' - Ломбард «Національний»' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    .content
+      
+      .breadcrumbs
+        .container
+          ul
+            li
+              a(href="#!") 
+                i.fa.fa-home
+                | Главная
+            li
+              span Изделия в продаже
+      
+      .container
+        
+        .visible-sm
+          .h1 Гарнитур с бриллиантом гарнитур с бриллиантом
+          .product__articul Артикул: 125689
+        
+        .product
+          .row
+            .col-md-6
+              .product__gallery.gallery
+                a(href="./img/gallery-img-big-1.jpg").gallery-item.first
+                  img(src="./img/gallery-img-big-1.jpg", alt="").img-responsive
+                .clear15
+                a(href="./img/gallery-img-big-1.jpg").gallery-item
+                  img(src="./img/gallery-img-1.jpg", alt="").img-responsive
+                a(href="./img/gallery-img-big-1.jpg").gallery-item
+                  img(src="./img/gallery-img-1.jpg", alt="").img-responsive
+                a(href="./img/gallery-img-big-1.jpg").gallery-item
+                  img(src="./img/gallery-img-1.jpg", alt="").img-responsive
+                a(href="./img/gallery-img-big-1.jpg").gallery-item
+                  img(src="./img/gallery-img-1.jpg", alt="").img-responsive
+              
+            .col-md-6
+              .hidden-sm
+                h1 Гарнитур с бриллиантом гарнитур с бриллиантом
+                .product__articul Артикул: 125689
+              
+              .product__buy
+                div
+                  .product__buy-price
+                    div 12 100 
+                      small грн
+                    div
+                      s 15 100 
+                        small грн
+                div
+                  a(href="#popup").open-popup-link.btn.btn--red Купить в один клик
+              
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              
+              .product__th
+                .row
+                  .col-lg-6
+                    table
+                      tr
+                        td(nowrap) Материал:
+                        td Золото
+                      tr
+                        td(nowrap) Проба:
+                        td 585
+                      tr
+                        td(nowrap) Вставки:
+                        td 26 бриллиантов
+                      tr
+                        td(nowrap) Караты:
+                        td 0,16
+                  .col-lg-6
+                    table
+                      tr
+                        td(nowrap) Цвет:
+                        td 4
+                      tr
+                        td(nowrap) Чистота:
+                        td 6
+                      tr
+                        td(nowrap) Форма огранки:
+                        td круглая
+                      tr
+                        td(nowrap) Вес, гр:
+                        td 2,65
+              
+              .product__info
+                div
+                  img(src="./img/product-info-img-1.png", alt="")
+                  p Надежность и безопасность
+                div
+                  img(src="./img/product-info-img-2.png", alt="")
+                  p Гарантия
+                div
+                  img(src="./img/product-info-img-3.png", alt="")
+                  p 100 % Подлинность изделия
+
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    

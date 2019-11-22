@@ -1,0 +1,41 @@
+/* buttons */
+
+.btn
+  display: inline-block
+  padding: 0 25px
+  margin-bottom: 0
+  font-size: rem(16)
+  font-weight: 400
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  touch-action: manipulation
+  cursor: pointer
+  user-select: none
+  font-family: $font-agora-slab-b
+  min-width: 200px
+  background:
+    image: none
+    color: #545456
+  border: 1px solid #545456
+  border-radius: 0px
+  height: 45px
+  line-height: 43px
+  text-decoration: none
+  color: $color-white
+  transition: all 0.35s
+  &:hover, &:focus, &:active
+    outline: none
+    background-color: $color-red
+    border-color: $color-red
+    color: $color-white
+
+  &--red
+    background-color: $color-red
+    border-color: $color-red
+    color: $color-white
+    &:hover, &:focus
+      background:
+        image: none
+        color: #545456
+      border-color: #545456
